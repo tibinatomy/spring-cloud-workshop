@@ -8,17 +8,28 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
+
 	<artifactId>usermanager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>usermanager</name>
 	<packaging>pom</packaging>
 	<description>User manager module</description>
+
 	<modules>
 		<module>user360service</module>
+		<module>usermodelinterface</module>
+		<module>user360commonlib</module>
+		<module>user360servicelib</module>
 	</modules>
+
 	<properties>
-<!--		<user360models.version>0.0.1-SNAPSHOT</user360models.version>-->
+		<core-api-base.version>0.0.1-SNAPSHOT</core-api-base.version>
+
+		<!-- user manager modules-->
+		<usermodelinterface.version>0.0.1-SNAPSHOT</usermodelinterface.version>
+		<user360commonlib.version>0.0.1-SNAPSHOT</user360commonlib.version>
 		<user360service.version>0.0.1-SNAPSHOT</user360service.version>
+		<user360servicelib.version>0.0.1-SNAPSHOT</user360servicelib.version>
 	</properties>
 
 </project>

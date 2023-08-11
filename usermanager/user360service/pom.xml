@@ -8,10 +8,24 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
+
 	<artifactId>user360service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${user360service.version}</version>
 	<name>user360service</name>
 	<description>Workshop on spring cloud project</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.tibs.spring.cloud.workshop</groupId>
+			<artifactId>usermodelinterface</artifactId>
+			<version>${usermodelinterface.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tibs.spring.cloud.workshop</groupId>
+			<artifactId>user360servicelib</artifactId>
+			<version>${user360servicelib.version}</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
@@ -22,7 +36,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>${maven-surefire-plugin.version}</version>
 				<configuration>
 					<skipTests>true</skipTests>
 				</configuration>
